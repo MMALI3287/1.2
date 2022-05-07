@@ -22,8 +22,29 @@ public class CGPA_Calc {
         float H1 = sc.nextFloat();
         System.out.print("CSE1200 : ");
         float H2 = sc.nextFloat();
-        System.out.println("Your CGPA is : "
-                + ((((E1 + P1 + C1 + M1 + H1) * 3) + ((E2 + E3 + H2) * 1.5) + (P2 * 0.75)) / (float) 20.25));
+        float CGPA = (float) ((((E1 + P1 + C1 + M1 + H1) * 3) + ((E2 + E3 + H2) * 1.5) + (P2 * 0.75)) / (float) 20.25);
+        System.out.println("Your CGPA is : " + CGPA);
+        if (CGPA == 4.0) {
+            System.out.println("You are in A+");
+        } else if (CGPA >= 3.75) {
+            System.out.println("You are in A");
+        } else if (CGPA >= 3.5) {
+            System.out.println("You are in A-");
+        } else if (CGPA >= 3.25) {
+            System.out.println("You are in B+");
+        } else if (CGPA >= 3.0) {
+            System.out.println("You are in B");
+        } else if (CGPA >= 2.75) {
+            System.out.println("You are in B-");
+        } else if (CGPA >= 2.5) {
+            System.out.println("You are in C+");
+        } else if (CGPA >= 2.25) {
+            System.out.println("You are in C");
+        } else if (CGPA >= 2.0) {
+            System.out.println("You are in D");
+        } else {
+            System.out.println("You are in F");
+        }
     }
 
 }
